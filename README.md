@@ -15,7 +15,7 @@ A pure lua library to for SubRip file parsing
 	local captionsData = coolVideoSrtFile:read()
 	local captionsObject = srt.new(captionsData)
 	```
-5. 🎬 Tell in what part of the media we are right now, since this is a generic pure lua function a better example is done with the LÖVE2D framework, so we can get a real world example
+5. 🎬 Tell in what part of the media we are right now, since this is a generic pure lua function a better example is done with the [LÖVE2D framework](love2d.org), so we can get a real world example
 	```lua
 	local coolVideo = love.graphics.newVideo("path/to/cool/video.ogg")
 
