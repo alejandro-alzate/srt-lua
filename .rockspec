@@ -2,7 +2,7 @@ package = "srt"
 version = "1.0.0"
 source = {
 	url = "https://github.com/alejandro-alzate/srt-lua"
-	tag = "v1.0.0"
+	tag = "luarocks-lastest"
 }
 description = {
 	summary = "A pure lua SubRip (SRT) file parser.",
