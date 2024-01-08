@@ -53,4 +53,4 @@ A pure lua library to for SubRip (SRT) file parsing
 	```
 
  Here's an example:
- ![imagen](https://github.com/alejandro-alzate/srt-lua/assets/57909935/6f5318d8-b724-4e70-998a-e6330f870f5d)
+ 	![imagen](https://github.com/alejandro-alzate/srt-lua/assets/57909935/6f5318d8-b724-4e70-998a-e6330f870f5d)
