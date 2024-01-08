@@ -4,18 +4,18 @@ A pure lua library to for SubRip file parsing
 
 ## Getting started
 ---
-1. Get a copy of srt.lua from the [Official Repository](https://github.com/alejandro-alzate/srt-lua)
-2. Copy `srt.lua` where you like to use it, or just on the root directory of the project
-3. Add it to your project like this
+1. 📡 Get a copy of srt.lua from the [Official Repository](https://github.com/alejandro-alzate/srt-lua)
+2. 💾 Copy `srt.lua` where you like to use it, or just on the root directory of the project
+3. ⚙ Add it to your project like this
 	```lua
 	local srt = require("path/to/srt")
 	```
-4. Pass a plain text representation of the file
+4. 📃 Pass a plain text representation of the file
 	```lua
 	local captionsData = coolVideoSrtFile:read()
 	local captionsObject = srt.new(captionsData)
 	```
-5. Tell in what part of the media is we are right now, since this is a generic pure lua function a better example is done with the LÖVE2D framework, so we can get a real world example
+5. 🎬 Tell in what part of the media we are right now, since this is a generic pure lua function a better example is done with the LÖVE2D framework, so we can get a real world example
 	```lua
 	local coolVideo = love.graphics.newVideo("path/to/cool/video.ogg")
 
@@ -30,9 +30,9 @@ A pure lua library to for SubRip file parsing
 		captionsObject:update(dt)
 	end
 	```
-6. Profit.
+6. 💎 Profit.
 	(jokes aside once changes are applied we can ask for the text and use it,
-	/!\ take note that the result is raw from the file,
+	⚠ But take note that the result is raw from the file,
 	so any gibberish has to be cleaned mannually r/NotMyJob)
 	```lua
 	function love.draw()
