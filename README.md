@@ -21,6 +21,7 @@ A pure lua library to for SubRip (SRT) file parsing
 
 	function love.update(dt)
 		--A media source on love returns a number in seconds when the method :tell() is called
+		--srt.lua takes the elapsed time in seconds so be aware of passing seconds as an integer
 		local tellTime = coolVideo:tell()
 
 		--We pass the time elapsed in seconds
