@@ -4,7 +4,7 @@ A pure lua library to for SubRip (SRT) file parsing
 
 ## Getting started
 ---
-1. 📡 Get a copy of srt.lua from the [Official Repository](https://github.com/alejandro-alzate/srt-lua)
+1. 📡 Get a copy of srt.lua from the [Official Repository](https://github.com/alejandro-alzate/srt-lua) or [From Luarocks](https://luarocks.org/modules/alejandro-alzate/srt)
 2. 💾 Copy `srt.lua` where you like to use it, or just on the root directory of the project
 3. ⚙ Add it to your project like this
 	```lua
@@ -51,3 +51,6 @@ A pure lua library to for SubRip (SRT) file parsing
 	end
 
 	```
+
+ Here's an example:
+ 	![imagen](https://github.com/alejandro-alzate/srt-lua/assets/57909935/6f5318d8-b724-4e70-998a-e6330f870f5d)
