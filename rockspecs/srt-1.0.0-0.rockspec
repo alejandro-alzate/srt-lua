@@ -1,8 +1,8 @@
 package = "srt"
-version = "1.0.0"
+version = "1.0.0-0"
 source = {
-	url = "https://github.com/alejandro-alzate/srt-lua"
-	tag = "luarocks-lastest"
+	url = "https://github.com/alejandro-alzate/srt-lua",
+	tag = "luarocks-lastest",
 }
 description = {
 	summary = "A pure lua SubRip (SRT) file parser.",
@@ -11,15 +11,15 @@ description = {
 		for reading captions files with the format .srt
 	]],
 	homepage = "http://...",
-	license = "MIT"
+	license = "MIT",
 }
 dependencies = {
-	"lua >= 5.1, < 5.4"
+	"lua >= 5.1, < 5.4",
 	-- If you depend on other rocks, add them here
 }
 build = {
-	type = "builtin"
+	type = "builtin",
 	modules = {
-		srt = "srt.lua"
+		srt = "srt.lua",
 	},
 }
