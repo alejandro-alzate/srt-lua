@@ -1,6 +1,6 @@
 # SRT.lua
 ----
-A pure lua library to for SubRip file parsing
+A pure lua library to for SubRip (SRT) file parsing
 
 ## Getting started
 ---
@@ -8,16 +8,16 @@ A pure lua library to for SubRip file parsing
 2. 💾 Copy `srt.lua` where you like to use it, or just on the root directory of the project
 3. ⚙ Add it to your project like this
 	```lua
-	local srt = require("path/to/srt")
+	local srt				= require("path/to/srt")
 	```
 4. 📃 Pass a plain text representation of the file
 	```lua
-	local captionsData = coolVideoSrtFile:read()
-	local captionsObject = srt.new(captionsData)
+	local captionsData		= read("path/to/captions")
+	local captionsObject	= srt.new(captionsData)
 	```
 5. 🎬 Tell in what part of the media we are right now, since this is a generic pure lua function a better example is done with the [LÖVE2D framework](love2d.org), so we can get a real world example
 	```lua
-	local coolVideo = love.graphics.newVideo("path/to/cool/video.ogg")
+	local coolVideo			= love.graphics.newVideo("path/to/cool/video.ogg")
 
 	function love.update(dt)
 		--A media source on love returns a number in seconds when the method :tell() is called
@@ -27,6 +27,9 @@ A pure lua library to for SubRip file parsing
 		captionsObject:setTime(tellTime)
 
 		--We tell srt.lua to apply changes, an optional argument is the delta so we account the lag
+		--This method has been deprecated since setTime calls it internally but has not been removed
+		--For the lag compesation feature that has. Beware of not using it alone since you could get
+		--out of sync with the media being played with.
 		captionsObject:update(dt)
 	end
 	```
