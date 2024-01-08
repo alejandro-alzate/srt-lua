@@ -1,0 +1,49 @@
+# SRT.lua
+----
+A pure lua library to for SubRip file parsing
+
+## Getting started
+---
+1. Get a copy of srt.lua from the [Official Repository](https://github.com/alejandro-alzate/srt-lua)
+2. Copy `srt.lua` where you like to use it, or just on the root directory of the project
+3. Add it to your project like this
+	```lua
+	local srt = require("path/to/srt")
+	```
+4. Pass a plain text representation of the file
+	```lua
+	local captionsData = coolVideoSrtFile:read()
+	local captionsObject = srt.new(captionsData)
+	```
+5. Tell in what part of the media is we are right now, since this is a generic pure lua function a better example is done with the LÖVE2D framework, so we can get a real world example
+	```lua
+	local coolVideo = love.graphics.newVideo("path/to/cool/video.ogg")
+
+	function love.update(dt)
+		--A media source on love returns a number in seconds when the method :tell() is called
+		local tellTime = coolVideo:tell()
+
+		--We pass the time elapsed in seconds
+		captionsObject:setTime(tellTime)
+
+		--We tell srt.lua to apply changes, an optional argument is the delta so we account the lag
+		captionsObject:update(dt)
+	end
+	```
+6. Profit.
+	(jokes aside once changes are applied we can ask for the text and use it,
+	/!\ take note that the result is raw from the file,
+	so any gibberish has to be cleaned mannually r/NotMyJob)
+	```lua
+	function love.draw()
+		--We draw the video
+		love.graphics.draw(coolVideo)
+
+		--We draw the subs
+		love.graphics.setFont(48)
+		local captionsText = captionsObject:getText()
+		local windowWidth, windowHeight = love.graphics.getDimensions()
+		love.graphics.print(captionsText, 0, windowHeight - 48)
+	end
+
+	```
