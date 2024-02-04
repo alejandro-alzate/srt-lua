@@ -1,9 +1,7 @@
 # SRT.lua
-----
 A pure lua library to for SubRip (SRT) file parsing
 
 ## Getting started
----
 1. 📡 Get a copy of srt.lua from the [Official Repository](https://github.com/alejandro-alzate/srt-lua) or [From Luarocks](https://luarocks.org/modules/alejandro-alzate/srt)
 2. 💾 Copy `srt.lua` where you like to use it, or just on the root directory of the project
 3. ⚙ Add it to your project like this
