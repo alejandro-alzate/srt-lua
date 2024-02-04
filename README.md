@@ -1,5 +1,16 @@
-# SRT.lua
+# *srt.lua*
 A pure lua library to for SubRip (SRT) file parsing
+
+## To do:
+- [ ] Improve performance
+- [ ] Extended formatting
+	- [ ] Position flags
+	- [ ] HTML Color and format like *italic*, **bold**, _Underlined_ ***and*** *everything* **in** ***between***
+	- [ ] Other formats like ~~strikethrough~~
+
+## Features
+- Simple API
+- "Fast" (The code as 4/feb/24 does very messed stuff but the files that this library deals with are gennerally small)
 
 ## Getting started
 1. 📡 Get a copy of srt.lua from the [Official Repository](https://github.com/alejandro-alzate/srt-lua) or [From Luarocks](https://luarocks.org/modules/alejandro-alzate/srt)
