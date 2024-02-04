@@ -15,7 +15,6 @@ description = {
 }
 dependencies = {
 	"lua >= 5.1, < 5.4",
-	-- If you depend on other rocks, add them here
 }
 build = {
 	type = "builtin",
