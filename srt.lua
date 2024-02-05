@@ -1,7 +1,7 @@
 local srt = {
-	_VERSION		= '1.0.0-0',
-	_DESCRIPTION	= 'SRT parser for lua',
-	_URL			= 'github.com/alejandro-alzate/srt-lua',
+	_VERSION		= "1.0.0-0",
+	_DESCRIPTION	= "SRT parser for lua",
+	_URL			= "github.com/alejandro-alzate/srt-lua",
 	_LICENSE		= [[
 	MIT License
 

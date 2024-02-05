@@ -10,7 +10,7 @@ A pure lua library to for SubRip (SRT) file parsing
 
 ## Features
 - Simple API
-- "Fast" (The code as 4/feb/24 does very messed stuff but the files that this library deals with are gennerally small)
+- Easy to work with
 
 ## Getting started
 1. 📡 Get a copy of srt.lua from the [Official Repository](https://github.com/alejandro-alzate/srt-lua) or [From Luarocks](https://luarocks.org/modules/alejandro-alzate/srt)
