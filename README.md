@@ -15,6 +15,7 @@ A pure lua library to for SubRip (SRT) file parsing
 ## Flaws
 - Janky parsing routine
 - Inefficient
+- Probably will break if the time reaches over 99 hours
 
 ## Getting started
 1. 📡 Get a copy of srt.lua from the [Official Repository](https://github.com/alejandro-alzate/srt-lua) or [From Luarocks](https://luarocks.org/modules/alejandro-alzate/srt)
