@@ -6,7 +6,7 @@ A pure lua library to for SubRip (SRT) file parsing
 - [ ] Extended formatting
 	- [ ] Position flags
 	- [ ] HTML Color and format like *italic*, **bold**, _Underlined_ ***and*** *everything* **in** ***between***
-	- [ ] Other formats like ~~strikethrough~~
+	- [ ] Other formats like ~~strike through~~
 
 ## Features
 - Simple API
@@ -26,7 +26,7 @@ A pure lua library to for SubRip (SRT) file parsing
 	```
 4. 📃 Pass a plain text representation of the file
 	```lua
-	local captionsData = read("path/to/captions")
+	local captionsData = io.read("path/to/captions")
 	local captionsObject = srt.new(captionsData)
 	```
 5. 🎬 Tell in what part of the media we are right now, since this is a generic pure lua function a better example is done with the [LÖVE2D framework](love2d.org), so we can get a real world example
@@ -43,7 +43,7 @@ A pure lua library to for SubRip (SRT) file parsing
 
 		--We tell srt.lua to apply changes, an optional argument is the delta so we account the lag
 		--This method has been deprecated since setTime calls it internally but has not been removed
-		--For the lag compesation feature that has. Beware of not using it alone since you could get
+		--For the lag compensation feature that has. Beware of not using it alone since you could get
 		--out of sync with the media being played with.
 		captionsObject:update(dt)
 	end
@@ -51,7 +51,7 @@ A pure lua library to for SubRip (SRT) file parsing
 6. 💎 Profit.
 	(jokes aside once changes are applied we can ask for the text and use it,
 	⚠ But take note that the result is raw from the file,
-	so any gibberish has to be cleaned mannually r/NotMyJob)
+	so any gibberish has to be cleaned manually r/NotMyJob)
 	```lua
 	function love.draw()
 		--We draw the video
@@ -67,4 +67,4 @@ A pure lua library to for SubRip (SRT) file parsing
 	```
 
  Here's an example:
- 	![imagen](https://github.com/alejandro-alzate/srt-lua/assets/57909935/6f5318d8-b724-4e70-998a-e6330f870f5d)
+ 	![image](https://github.com/alejandro-alzate/srt-lua/assets/57909935/6f5318d8-b724-4e70-998a-e6330f870f5d)
