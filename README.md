@@ -1,4 +1,6 @@
 # *srt.lua*
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Falejandro-alzate%2Fsrt-lua&count_bg=%2379C83D&title_bg=%23292929&icon=&icon_color=%23E7E7E7&title=Visits&edge_flat=false)](https://hits.seeyoufarm.com)
+
 A pure lua library to for SubRip (SRT) file parsing
 
 ## To do:
@@ -66,5 +68,5 @@ A pure lua library to for SubRip (SRT) file parsing
 
 	```
 
- Here's an example:
+Here's an example:
  	![image](https://github.com/alejandro-alzate/srt-lua/assets/57909935/6f5318d8-b724-4e70-998a-e6330f870f5d)
